@@ -1,0 +1,20 @@
+Lumped pi models
+
+Two port with $Z_{series}$ and $Y_{shunt}/2$ at each end.
+Short circuit the receiving end:
+$$Z_{series}=\left.\frac{\bar V_S}{\bar I_R}\right|_{V_R=0}=jZ_c\sin\beta l$$
+Open the receiving end:
+$$\left.\frac{\bar V_S}{\bar V_R}\right|_{I_R=0}=1+Z_{series}\frac{Y_{shunt}}{2}=\cos\beta l$$
+Small $\beta l$:
+$$\sin\beta l\approx\beta l\qquad \cos\beta l\approx1-\frac{(\beta l)^2}{2}$$
+$$Z_{series}=j\omega L_{line}\qquad L_{line}=Ll$$
+$$\frac{Y_{shunt}}{2}=j\frac{\omega C_{line}}{2}\qquad C_{line}=Cl$$
+Short line, under 100 km:
+$$Z=\left(R+j\omega L\right)l\qquad Y=0$$
+Medium line, 100 to 300 km:
+$$Z=\left(R+j\omega L\right)l\qquad Y=j\omega Cl$$
+Long line, over 300 km:
+$$Z=Z_c\sinh\gamma l$$
+$$\frac{Y}{2}=\frac{\tanh\left(\gamma l/2\right)}{Z_c}$$
+$$Z_c=\sqrt{\frac{R+j\omega L}{G+j\omega C}}$$
+$$\gamma=\sqrt{\left(R+j\omega L\right)\left(G+j\omega C\right)}$$

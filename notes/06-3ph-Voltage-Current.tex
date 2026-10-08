@@ -1,0 +1,21 @@
+Three phase voltages and currents
+
+Positive sequence a-b-c:
+$$\bar V_{an}=V_{ph}\angle0^{\circ}$$
+$$\bar V_{bn}=V_{ph}\angle-120^{\circ}$$
+$$\bar V_{cn}=V_{ph}\angle-240^{\circ}$$
+$$\bar V_{an}+\bar V_{bn}+\bar V_{cn}=0$$
+Line to line:
+$$\bar V_{ab}=\bar V_{an}-\bar V_{bn}\quad \bar V_{bc}=\bar V_{bn}-\bar V_{cn}\quad \bar V_{ca}=\bar V_{cn}-\bar V_{an}$$
+$$V_{LL}=\sqrt{3}\,V_{ph}$$
+$$\bar V_{ab}=\sqrt{3}V_{ph}\angle30^{\circ}$$
+$$\bar V_{bc}=\sqrt{3}V_{ph}\angle-90^{\circ}$$
+$$\bar V_{ca}=\sqrt{3}V_{ph}\angle-210^{\circ}$$
+Load current with $Z_L=\left|Z_L\right|\angle\phi$:
+$$\bar I_a=\frac{\bar V_{an}}{Z_L}=\frac{V_{ph}}{\left|Z_L\right|}\angle-\phi$$
+$$\bar I_b=\bar I_a\angle-120^{\circ}\qquad \bar I_c=\bar I_a\angle-240^{\circ}$$
+Mutual coupling, with $\bar I_a+\bar I_b+\bar I_c=0$:
+$$\bar V_{aA}=Z_{self}\bar I_a+Z_{mutual}\bar I_b+Z_{mutual}\bar I_c$$
+$$Z_{aA}=Z_{self}-Z_{mutual}$$
+Delta to wye, balanced:
+$$Z_Y=\frac{Z_\Delta}{3}$$

@@ -1,0 +1,21 @@
+Power factor correction
+
+Capacitor or inductor in parallel. P does not change.
+$$\theta^{\prime}=\arccos(PF_{new})$$
+Use negative $\theta^{\prime}$ if the new PF is leading.
+$$Q^{\prime}=P\tan\theta^{\prime}\qquad \Delta Q=Q-Q^{\prime}$$
+Q is positive for lagging and negative for leading.
+$\Delta Q>0$: add a capacitor, $Q_c=\Delta Q$.
+$\Delta Q<0$: add an inductor, sized by $\left|\Delta Q\right|$.
+Capacitor:
+$$X_c=-j\frac{V^2}{Q_c}\qquad C=\frac{Q_c}{2\pi fV^2}$$
+Inductor:
+$$X_L=\frac{V^2}{\left|\Delta Q\right|}\qquad L=\frac{V^2}{2\pi f\left|\Delta Q\right|}$$
+New current:
+$$\bar I^{\prime}=\frac{S^{\prime *}}{\bar V^{*}}\qquad \left|I^{\prime}\right|=\frac{P}{V\,PF_{new}}$$
+Three phase banks, with $Q_{3\phi}$ the total vars:
+$$\left|X_Y\right|=\frac{V_{LL}^2}{Q_{3\phi}}\qquad \left|X_\Delta\right|=\frac{3V_{LL}^2}{Q_{3\phi}}$$
+Example: 1400 V, 60 Hz, 60 kW + j80 kvar, raise PF from 0.6 to 0.8 lagging.
+$$Q^{\prime}=45\;\text{kvar}\qquad Q_c=35\;\text{kvar}$$
+$$X_c=-j56\;\Omega\qquad C=47.37\;\mu\text{F}$$
+$$I:\;71.43\;\text{A}\to53.57\;\text{A}$$

@@ -1,0 +1,15 @@
+Distributed parameter line, lossless
+
+x is measured from the receiving end.
+$$\frac{d\bar V_x}{dx}=j\omega L\bar I_x\qquad \frac{d\bar I_x}{dx}=j\omega C\bar V_x$$
+$$\frac{d^2\bar V_x}{dx^2}+\beta^2\bar V_x=0$$
+$$\beta=\omega\sqrt{LC}\qquad Z_c=\sqrt{\frac{L}{C}}$$
+$$\bar V_x=\bar V_1e^{j\beta x}+\bar V_2e^{-j\beta x}$$
+$$\bar I_x=\frac{\bar V_1e^{j\beta x}-\bar V_2e^{-j\beta x}}{Z_c}$$
+At x = 0:
+$$\bar V_1=\frac{\bar V_R+Z_c\bar I_R}{2}\qquad \bar V_2=\frac{\bar V_R-Z_c\bar I_R}{2}$$
+$$\bar V_x=\bar V_R\cos\beta x+jZ_c\bar I_R\sin\beta x$$
+$$\bar I_x=\bar I_R\cos\beta x+j\frac{\bar V_R}{Z_c}\sin\beta x$$
+Sending end, x = l:
+$$\bar V_S=\bar V_R\cos\beta l+jZ_c\bar I_R\sin\beta l$$
+$$\bar I_S=\bar I_R\cos\beta l+j\frac{\bar V_R}{Z_c}\sin\beta l$$

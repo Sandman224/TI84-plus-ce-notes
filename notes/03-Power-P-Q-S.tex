@@ -1,0 +1,17 @@
+Power, reactive power, power factor
+
+$$\phi=\phi_v-\phi_i$$
+$$P=VI\cos\phi\;\text{W}\qquad Q=VI\sin\phi\;\text{VAR}$$
+$$S=\bar V\,\bar I^{*}=VI\angle\phi=P+jQ$$
+$$\left|S\right|=\sqrt{P^2+Q^2}\;\text{VA}\qquad \phi=\arctan\frac{Q}{P}$$
+$$PF=\frac{P}{\left|S\right|}=\frac{P}{VI}=\cos\phi$$
+Inductive load: lagging, $\phi_i=\phi_v-90^{\circ}$, $Q>0$.
+Capacitive load: leading, $\phi_i=\phi_v+90^{\circ}$, $Q<0$.
+Pure L or C: $P=0$.
+$$p_L=VI_L\sin2(\omega t+\phi_v)\qquad p_C=-VI_C\sin2(\omega t+\phi_v)$$
+General load:
+$$I_R=I\cos\phi\qquad I_X=I\sin\phi$$
+$$p=VI_R\left[1+\cos2(\omega t+\phi_v)\right]+VI_X\sin2(\omega t+\phi_v)$$
+Totals over a circuit:
+$$\sum P_k=\sum I_k^2R_k\qquad \sum Q_k=\sum I_k^2X_k$$
+$$S=S_1+S_2+S_3\qquad \bar I=\frac{S^{*}}{\bar V^{*}}$$
